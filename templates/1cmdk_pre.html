@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head>
+    <title>AgiWEB</title>
+    <link rel="stylesheet" href='{{ url_for("static", filename="1style.css") }}'>
+</head>
+
+<body>
+  <div class="subsubheader">
+      <section class="navbar">
+          <nav>
+          <a href="1index.html"><img src='{{ url_for("static", filename="3.png") }}' class="logo"></a>
+          <ul>
+            <li><a href="/">Accueil</a></li>xx
+            <li><a href="/Client">Client</a></li>
+            <li><a href="/AgiLean">AgiLean</a></li>
+            <li><a href="/AgiLog">AgiLog</a></li>
+          </ul>
+          </nav>
+      </section>
+    </div>
+  <div class="commande">
+      <h1 class="titreform">Commande de kits</h1><br>
+      <form action="/AgiLean/CommandeKit/reple" method="post">
+          <div class="wrapper3">
+              <div class="kits">
+                  <section class="titrecol">
+                      <h3>Kit</h3><br>
+                  </section>
+                  <section class="selection2">
+                      <h3>Kit 1</h3>
+                  </section><br>
+                  <section class="selection2">
+                      <h3>Kit 2</h3>
+                  </section><br>
+                  <section class="selection2">
+                      <h3>Kit 3</h3>
+                  </section>
+              </div>
+              <div class="qtekit">
+                  <section class="titrecol">
+                      <h3>Quantité</h3><br>
+                  </section>
+                  <div class="qte">
+                      <label for="qte"></label>
+                      <input type="number"
+                             id="qte"
+                             name="qte"
+                             placeholder="0">
+                  </div>
+                  <div class="qte">
+                      <label for="qte"></label>
+                      <input type="number"
+                             id="qte"
+                             name="qte"
+                             placeholder="0">
+                  </div>
+                  <div class="qte">
+                      <label for="qte"></label>
+                      <input type="number"
+                             id="qte"
+                             name="qte"
+                             placeholder="0">
+                  </div>
+              </div>
+              <div class="submit3">
+                  <input type="submit" value="OK" class="btn">
+              </div>
+          </div>
+      </form>
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+    
+<head>
+    <title>Espace Client</title>
+    <link rel="stylesheet" href='{{ url_for("static", filename="1style.css") }}'>
+</head>
+
+<body>
+    <div class="subsubheader">
+      <section class="navbar">
+          <nav>
+          <a href="1index.html"><img src='{{ url_for("static", filename="3.png") }}' class="logo"></a>
+          <ul>
+              <li><a href="/">Accueil</a></li>xx
+              <li><a href="/Client">Client</a></li>
+              <li><a href="/AgiLean">AgiLean</a></li>
+              <li><a href="/AgiLog">AgiLog</a></li>
+          </ul>
+          </nav>
+      </section>
+      <section class="selection">
+          <h1>Sélectionnez votre produit</h1>
+      </section>
+      <section class="items">
+          <div class="item">
+              <a href="/Client/NouvelleCommande/ccf"><img src='{{ url_for("static", filename="ccf.png") }}'></a>
+              <div class="description">
+                  <h4>châssis court fermé</h4>
+              </div>
+          </div>
+          <div class="item">
+              <a href="/Client/NouvelleCommande/cco"><img src='{{ url_for("static", filename="cco.png") }}'></a>
+              <div class="description">
+                  <h4>châssis court ouvert</h4>
+              </div>
+          </div>
+          <div class="item">
+              <a href="/Client/NouvelleCommande/clf"><img src='{{ url_for("static", filename="clf.png") }}'></a>
+              <div class="description">
+                  <h4>châssis long fermé</h4>
+              </div>
+          </div>
+          <div class="item">
+              <a href="/Client/NouvelleCommande/clo"><img src='{{ url_for("static", filename="clo.png") }}'></a>
+              <div class="description">
+                  <h4>châssis long ouvert</h4>
+              </div>
+          </div>
+      </section>
+    </div>
+</body>
+
+
+</html>

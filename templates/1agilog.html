@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head>
+    <title>Espace AgiLog</title>
+    <link rel="stylesheet" href='{{ url_for("static", filename="1style.css") }}'>
+</head>
+
+<body>
+  <div class="agilog">
+      <section class="navbar">
+          <nav>
+          <a href="1index.html"><img src='{{ url_for("static", filename="3.png") }}' class="logo"></a>
+          <ul>
+            <li><a href="/">Accueil</a></li>xx
+            <li><a href="/Client">Client</a></li>
+            <li><a href="/AgiLean">AgiLean</a></li>
+            <li><a href="/AgiLog">AgiLog</a></li>
+          </ul>
+          </nav>
+      </section>
+      <div class="choix">
+        <h1>Bienvenue dans votre Espace AgiLog</h1><br>
+          <div>
+              <a href="/AgiLog/CommandePièce" class="btn"><span></span>Commande de pièces</a><br><br>
+               <a href="/AgiLog/AffichageStock" class="btn"><span></span>Affichage des Stocks</a>
+          </div>
+      </div>
+      
+ </div>
+
+
+</body>
+
+
+</html>

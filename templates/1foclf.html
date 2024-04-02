@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<meta charset="UTF-8">
+<head>
+    <title>AgiWEB</title>
+    <link rel="stylesheet" href='{{ url_for("static", filename="1style.css") }}'>
+</head>
+
+<body>
+  <div class="subsubheader">
+      <section class="navbar">
+          <nav>
+          <a href="1index.html"><img src='{{ url_for("static", filename="3.png") }}' class="logo"></a>
+          <ul>
+            <li><a href="/">Accueil</a></li>xx
+            <li><a href="/Client">Client</a></li>
+            <li><a href="/AgiLean">AgiLean</a></li>
+            <li><a href="/AgiLog">AgiLog</a></li>
+          </ul>
+          </nav>
+      </section>
+    </div>
+  <div class="commande">
+      <h1 class="titreform">Nouvelle Commande</h1>
+      <form action="/Client/NouvelleCommande/repcl" method="post">
+          <div class="soustitreform">
+              <h3>Châssis : Long Fermé</h3><br>
+          </div>
+          <div class="nom">
+              <label for="Nom"></label>
+              <input type=text
+                     id="Nom"
+                     name="Nom"
+                     placeholder="Nom Complet">
+          </div>
+          <div class="choixoptions">
+              <div class="soustitreform">
+                  <label for="options"><h3>Choix des options :</h3><br></label>
+              </div>
+              <div class="wrapper2">
+                  <div class="option1">
+                      <input type=checkbox name=option id="Antenne">
+                      <label for="Antenne">Antenne</label>
+                  </div>
+                  <div class="option2">
+                      <input type=checkbox name=option id="Attache-Remorque">
+                      <label for="Attache-Remorque">Attache-Remorque</label>
+                  </div>
+                  <div class="option3">
+                      <input type=checkbox name=option id="Porte-Outils">
+                      <label for="Porte-Outils">Porte-Outils</label>
+                  </div>
+              </div>
+          </div>
+          <div class="submit">
+              <input type="submit" value="Commander" class="btn">
+          </div>
+      </form>
+    </div>
+
+</body>
+
+
+</html>

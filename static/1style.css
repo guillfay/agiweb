@@ -1,0 +1,470 @@
+*{
+margin:0;
+padding:0;
+font-family: "Trebuchet MS";
+}
+
+.banner{ 
+    width: 100%;
+    height: 135vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.1)),
+    url(2.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo{
+    width: 300px;
+}
+
+
+nav{
+    width: 90%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;  
+    position: relative;
+}
+
+.navbar ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+    color:floralwhite;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li::after{
+    content: "";
+    height: 5px;
+    width: 0;
+    background:#FFFAF0;
+   /* barre du centre vers l'extérieur :*/
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    /*barre de gauche à droite :
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    transition: 0.5s;*/
+}
+
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+
+.accueil{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: floralwhite;
+}
+
+.accueil h1{
+    font-size: 50px;
+    margin-top: -50px;
+}
+
+.accueil p{
+    margin: 20px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*
+.button{
+    font-size: 18px;
+    width: 200px;
+    padding: 10px 0;
+    text-align: center;
+    margin: 20px 10px;
+    font-weight: bold;
+    border: 2px solid dimgray;
+    border-radius: 25px;
+    background: transparent;
+    color:floralwhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button:hover span{
+    width: 100%
+}
+*/
+
+span{
+    background: dimgray;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+/*Espace Client*/
+
+.subheader{
+    width: 100%;
+    height: 135vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.1)),
+    url(4.jpg);
+    opacity: 0.9;
+    background-size: cover;
+    background-position: center;
+}
+
+.choix{
+    width: 100%;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: floralwhite;
+}
+
+.choix h1{
+    font-size: 35px;
+    margin-top: -80px;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;    
+    font-weight: bold;
+    border: 2px solid dimgray;
+    border-radius: 25px;
+    padding:12px 34px;
+    background: transparent;
+    color:floralwhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover span{
+    width: 100%
+}
+
+
+.commande{
+    width: 100%;
+    position: absolute;
+    top:25%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: floralwhite;
+}
+
+.commande h1{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.suivi{
+    width: 100%;
+    position: absolute;
+    top:25%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: floralwhite;
+}
+
+.suivi h1{
+    font-size: 35px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+.pres{
+    width: 100%;
+    position: absolute;
+    top:40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: floralwhite;
+}
+
+.pres h1{
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.pres p{
+    margin: 20px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*Choix de commande*/
+
+.item img{
+    height: 270px;
+    margin: 18px;
+}
+
+.description{
+    margin-top: 10px;
+    font-size: 20px;
+    color: floralwhite;
+    text-transform: uppercase;   
+    text-align: center;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: center;
+}
+
+.item img{
+    border-radius: 15px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.item img:hover{
+    transform: scale(1.1);
+}
+
+.selection{
+    display: inline-block;
+    font-size: 14px;
+    border: 2px solid dimgray;
+    border-radius: 25px;
+    padding:12px 34px;
+    background: transparent;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: floralwhite;
+}
+
+/*Formulaire de commande*/
+
+.subsubheader{
+    width: 100%;
+    height: 150vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.1)),
+    url(6.jpg);
+    opacity: 0.91;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.commande{
+    font-size: 18px;
+    margin-top: 240px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+.choixoptions{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.soustitreform{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding-top: 20px;
+    margin-bottom: 30px;
+    text-transform: uppercase
+}
+
+input[type=text] {
+    font-size: 15px;
+    text-align: center;
+    width: 18%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type=submit] {
+    font-size: 18px;
+    text-align: center;
+    width: 18%;
+    padding: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+input[type=number] {
+    font-size: 15px;
+    text-align: center;
+    width: 18%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+input[type="checkbox"] {
+    height: 15px;
+    width: 25px;
+    border-radius: 15px;
+}
+
+
+.typechassis{
+    padding-top: 20px;
+}
+
+.wrapper2{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap: 10px;
+    color: floralwhite;
+}
+
+.option1{
+    grid-column: 3/4;
+}
+
+.option2{
+    grid-column: 4/5;
+}
+
+.option3{
+    grid-column: 5/6;
+}
+
+
+
+/*Espace AgiLog*/
+
+.agilog{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.1)),
+    url(5.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.subheadercmdp{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.93), rgba(0, 0, 0, 0.1)),
+    url(6.jpg);
+    opacity: 0.98;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.wrapper{
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    color: floralwhite;
+}
+
+.imgpiece{
+    grid-column: 2/3;
+    margin-bottom: 20px;
+}
+
+.nompiece{
+    grid-column: 3/4;
+    margin-bottom: 20px;
+}
+
+.qtepiece{
+    grid-column: 4/5;
+    margin-bottom: 20px;
+}
+
+.colpieces img{
+    height: 70px;
+    filter: contrast(1.2);
+}
+
+.qte{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.nompiece h5{
+    margin-top: 25px;
+    margin-bottom: 54px;
+    font-size: 16px;
+}
+
+.submit1{
+    margin-bottom: 50px;
+}
+ 
+
+/*Espace AgiLean*/
+
+.wrapper3{
+    text-transform: uppercase;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 10px;
+    color: floralwhite;
+}
+
+.kits{
+    grid-column: 3/4;
+    margin-bottom: 0;
+}
+
+.qtekits{
+    grid-column: 4/5;
+    margin-bottom: 0;
+}
+
+.selection2{
+    display: inline-block;
+    font-size: 14px;
+    border: 2px solid dimgray;
+    border-radius: 25px;
+    padding:12px 34px;
+    background: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: floralwhite;
+}
+
+.submit3{
+    grid-column: 3/5;
+    margin-bottom: 10px;
+}
